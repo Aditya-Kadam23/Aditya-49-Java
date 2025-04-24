@@ -1,0 +1,43 @@
+interface Animal{
+    public  void sound();
+    public  void eat();
+    public void swim();
+ }
+  class Cat implements Animal{
+     public void sound(){
+         System.out.println("Meow");
+     }
+     public void eat(){
+         System.out.println("Cat eats fish");
+     }
+     public void swim(){
+        System.out.println("Cat swims in water");
+     }
+ }
+ class Lion implements Animal{
+     public void sound(){
+         System.out.println("Loin always roars");
+     }
+     public void eat(){
+         System.out.println("Lion eats meat");
+     }
+     public void swim(){
+        System.out.println("Lion swims in water");
+     }
+ }
+
+public class Interfaces{ 
+   
+    public static void main(String[] args){
+        Lion lion = new Lion();
+        lion.sound();
+        lion.eat();
+        Cat cat = new Cat();
+        cat.sound();
+        cat.eat();
+        cat.swim();
+        lion.swim();
+     
+
+    }
+}
